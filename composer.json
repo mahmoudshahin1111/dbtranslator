@@ -1,0 +1,28 @@
+{
+    "name": "litems/dbtranslator",
+    "description": "Lite packages for simple and fast usage.",
+    "license": "MIT",
+    "keywords": ["websocket", "server", "psr-3"],
+    "homepage": "https://github.com/mahmoudshahin1111",
+    "type": "library",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Mahmoud shahin",
+            "email": "mahmoudshahin1111@gmail.com",
+            "homepage": "https://mahmoudshahin1111.blogspot.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+              "LiteMs\\Translator\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LiteMs\\Translator\\TranslatorServiceProvider"
+            ]
+        }
+    }
+}
