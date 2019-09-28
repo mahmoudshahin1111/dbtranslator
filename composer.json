@@ -2,7 +2,7 @@
     "name": "litems/dbtranslator",
     "description": "Lite packages for simple and fast usage.",
     "license": "MIT",
-    "keywords": ["websocket", "server", "psr-3"],
+    "keywords": ["dbtranslator", "translator","translate"],
     "homepage": "https://github.com/mahmoudshahin1111",
     "type": "library",
     "minimum-stability": "dev",
