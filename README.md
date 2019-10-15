@@ -1,7 +1,7 @@
 # DBTranslator (Laravel+JQUERY+DataTables+Bootstrap 4.3)
 
 now you can translate all tables as you wants.
-```
+```php
 Route::get('/', 'LiteMs\Translator\TranslationController@index');
 Route::post('/', 'LiteMs\Translator\TranslationController@store');
 Route::get('/translation/{trans_id}/{lang}', 'LiteMs\Translator\TranslationController@show');
@@ -9,7 +9,7 @@ Route::get('/translation/{trans_id}/{lang}', 'LiteMs\Translator\TranslationContr
 *Routes is 
 -Main page is  '/'
 -You Mast Has Language Model or change Config for Language Model Like That 
-```
+```php
 <?php
 return [
 .....
