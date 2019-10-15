@@ -135,8 +135,8 @@ class TranslationController extends Controller
         $table_col_as = explode('|', $trans_base->cols_as);
         $show = ["f1.id as base_id", "f2.id as trans_id"];
         foreach ($table_col_trans as $i => $col) {
-            array_push($show, "f1.{$col} as base_{$table_col_as[$i]}");
-            array_push($show, "f2.{$col} as trans_{$table_col_as[$i]}");
+            array_push($show, "f1.{$col} as 'base_{$table_col_as[$i]}'");
+            array_push($show, "f2.{$col} as 'trans_{$table_col_as[$i]}'");
         }
         $show = implode(',', $show);
         $records = DB::select("SELECT {$show} FROM {$table_name} as f1 left join {$table_name} as f2 on  f2.`source_id` = f1.id and f2.`lang_id` = {$lang_id}
