@@ -9,6 +9,7 @@ Route::get('/translation/{trans_id}/{lang}', 'LiteMs\Translator\TranslationContr
 *Routes is 
 -Main page is  '/'
 -You Mast Has Language Model or change Config for Language Model Like That 
+{asdasd}
 <?php
 return [
 .....
